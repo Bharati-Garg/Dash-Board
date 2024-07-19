@@ -1,376 +1,391 @@
 //pie-chart
 var chart = document.querySelector("#pie-chart");
 var options = {
-  series: [22, 77],
+  series: [20, 80],
   chart: {
     width: 280,
     height: 280,
     type: "pie",
   },
+
   dataLabels: {
     enabled: false,
   },
+
   plotOptions: {
     pie: {
       vertical: true,
     },
   },
-  labels: ["Budget Delivered", "Budget Left"],
+  labels: ["Budget Left", "Budget Delivered"],
   colors: ["#e1d0f7", "#6b12d9"],
   legend: {
     position: "bottom",
   },
+  // Plugins: {
+  //   labels: {
+  //     position: "outside",
+  //   },
+  //   dataLabels: {
+  //     formatter: (value) => {
+  //       console.log(value);
+  //       if (value >= 3) {
+  //         return value;
+  //       }
+  //     },
+  //   },
+  // },
 };
 var chart = new ApexCharts(document.querySelector("#pie-chart"), options);
 chart.render();
 
-//single line1
-var chart = document.querySelector("#chartline1");
-var options = {
-  chart: {
-    type: "bar",
-    height: 50,
-    toolbar: {
-      show: false,
-    },
-  },
-  plotOptions: {
-    bar: {
-      horizontal: true,
-      dataLabels: {
-        position: "true",
-      },
-    },
-  },
-  dataLabels: {
-    enabled: false,
-  },
-  series: [
-    {
-      data: [100],
-    },
-  ],
-  xaxis: {
-    categories: ["Single Bar"],
-    labels: {
-      show: false,
-    },
-    axisBorder: {
-      show: false,
-    },
-    axisTicks: {
-      show: false,
-    },
-  },
-  yaxis: {
-    show: false,
-  },
-  grid: {
-    show: false,
-  },
-  colors: ["#4ea135"],
-};
-var chart1 = new ApexCharts(document.querySelector("#chartline1"), options);
-chart1.render();
+// //single line1
+// var chart = document.querySelector("#chartline1");
+// var options = {
+//   chart: {
+//     type: "bar",
+//     height: 50,
+//     toolbar: {
+//       show: false,
+//     },
+//   },
+//   plotOptions: {
+//     bar: {
+//       horizontal: true,
+//       dataLabels: {
+//         position: "true",
+//       },
+//     },
+//   },
+//   dataLabels: {
+//     enabled: false,
+//   },
+//   series: [
+//     {
+//       data: [100],
+//     },
+//   ],
+//   xaxis: {
+//     categories: ["Single Bar"],
+//     labels: {
+//       show: false,
+//     },
+//     axisBorder: {
+//       show: false,
+//     },
+//     axisTicks: {
+//       show: false,
+//     },
+//   },
+//   yaxis: {
+//     show: false,
+//   },
+//   grid: {
+//     show: false,
+//   },
+//   colors: ["#4ea135"],
+// };
+// var chart1 = new ApexCharts(document.querySelector("#chartline1"), options);
+// chart1.render();
 
-//single line2
-var chart = document.querySelector("#chartline2");
-var options = {
-  chart: {
-    type: "bar",
-    height: 50,
-    toolbar: {
-      show: false,
-    },
-  },
-  plotOptions: {
-    bar: {
-      horizontal: true,
-      dataLabels: {
-        position: "top",
-      },
-    },
-  },
-  dataLabels: {
-    enabled: false,
-  },
-  series: [
-    {
-      data: [100],
-    },
-  ],
-  xaxis: {
-    categories: ["Single Bar"],
-    labels: {
-      show: false,
-    },
-    axisBorder: {
-      show: false,
-    },
-    axisTicks: {
-      show: false,
-    },
-  },
-  yaxis: {
-    show: false,
-  },
-  grid: {
-    show: false,
-  },
-  colors: ["#4ea135"],
-};
-var chart1 = new ApexCharts(document.querySelector("#chartline2"), options);
-chart1.render();
+// //single line2
+// var chart = document.querySelector("#chartline2");
+// var options = {
+//   chart: {
+//     type: "bar",
+//     height: 50,
+//     toolbar: {
+//       show: false,
+//     },
+//   },
+//   plotOptions: {
+//     bar: {
+//       horizontal: true,
+//       dataLabels: {
+//         position: "top",
+//       },
+//     },
+//   },
+//   dataLabels: {
+//     enabled: false,
+//   },
+//   series: [
+//     {
+//       data: [100],
+//     },
+//   ],
+//   xaxis: {
+//     categories: ["Single Bar"],
+//     labels: {
+//       show: false,
+//     },
+//     axisBorder: {
+//       show: false,
+//     },
+//     axisTicks: {
+//       show: false,
+//     },
+//   },
+//   yaxis: {
+//     show: false,
+//   },
+//   grid: {
+//     show: false,
+//   },
+//   colors: ["#4ea135"],
+// };
+// var chart1 = new ApexCharts(document.querySelector("#chartline2"), options);
+// chart1.render();
 
-//single line3
-var chart = document.querySelector("#chartline3");
-var options = {
-  chart: {
-    type: "bar",
-    height: 50,
-    toolbar: {
-      show: false,
-    },
-  },
-  plotOptions: {
-    bar: {
-      horizontal: true,
-      dataLabels: {
-        position: "top",
-      },
-    },
-  },
-  dataLabels: {
-    enabled: false,
-  },
-  series: [
-    {
-      data: [100],
-    },
-  ],
-  xaxis: {
-    categories: ["Single Bar"],
-    labels: {
-      show: false,
-    },
-    axisBorder: {
-      show: false,
-    },
-    axisTicks: {
-      show: false,
-    },
-  },
-  yaxis: {
-    show: false,
-  },
-  grid: {
-    show: false,
-  },
-  colors: ["#4ea135"],
-};
-var chart1 = new ApexCharts(document.querySelector("#chartline3"), options);
-chart1.render();
+// //single line3
+// var chart = document.querySelector("#chartline3");
+// var options = {
+//   chart: {
+//     type: "bar",
+//     height: 50,
+//     toolbar: {
+//       show: false,
+//     },
+//   },
+//   plotOptions: {
+//     bar: {
+//       horizontal: true,
+//       dataLabels: {
+//         position: "top",
+//       },
+//     },
+//   },
+//   dataLabels: {
+//     enabled: false,
+//   },
+//   series: [
+//     {
+//       data: [100],
+//     },
+//   ],
+//   xaxis: {
+//     categories: ["Single Bar"],
+//     labels: {
+//       show: false,
+//     },
+//     axisBorder: {
+//       show: false,
+//     },
+//     axisTicks: {
+//       show: false,
+//     },
+//   },
+//   yaxis: {
+//     show: false,
+//   },
+//   grid: {
+//     show: false,
+//   },
+//   colors: ["#4ea135"],
+// };
+// var chart1 = new ApexCharts(document.querySelector("#chartline3"), options);
+// chart1.render();
 
-//single line4
-var chart = document.querySelector("#chartline4");
-var options = {
-  chart: {
-    type: "bar",
-    height: 50,
-    toolbar: {
-      show: false,
-    },
-  },
-  plotOptions: {
-    bar: {
-      horizontal: true,
-      dataLabels: {
-        position: "top",
-      },
-    },
-  },
-  dataLabels: {
-    enabled: false,
-    offsetX: -6,
-    style: {
-      fontSize: "12px",
-      colors: ["#fff"],
-    },
-  },
-  series: [
-    {
-      data: [100],
-    },
-  ],
-  xaxis: {
-    categories: ["Single Bar"],
-    labels: {
-      show: false,
-    },
-    axisBorder: {
-      show: false,
-    },
-    axisTicks: {
-      show: false,
-    },
-  },
-  yaxis: {
-    show: false,
-  },
-  grid: {
-    show: false,
-  },
-  colors: ["#4ea135"],
-};
-var chart1 = new ApexCharts(document.querySelector("#chartline4"), options);
-chart1.render();
+// //single line4
+// var chart = document.querySelector("#chartline4");
+// var options = {
+//   chart: {
+//     type: "bar",
+//     height: 50,
+//     toolbar: {
+//       show: false,
+//     },
+//   },
+//   plotOptions: {
+//     bar: {
+//       horizontal: true,
+//       dataLabels: {
+//         position: "top",
+//       },
+//     },
+//   },
+//   dataLabels: {
+//     enabled: false,
+//     offsetX: -6,
+//     style: {
+//       fontSize: "12px",
+//       colors: ["#fff"],
+//     },
+//   },
+//   series: [
+//     {
+//       data: [100],
+//     },
+//   ],
+//   xaxis: {
+//     categories: ["Single Bar"],
+//     labels: {
+//       show: false,
+//     },
+//     axisBorder: {
+//       show: false,
+//     },
+//     axisTicks: {
+//       show: false,
+//     },
+//   },
+//   yaxis: {
+//     show: false,
+//   },
+//   grid: {
+//     show: false,
+//   },
+//   colors: ["#4ea135"],
+// };
+// var chart1 = new ApexCharts(document.querySelector("#chartline4"), options);
+// chart1.render();
 
-//single line5
-var chart = document.querySelector("#chartline5");
-var options = {
-  chart: {
-    type: "bar",
-    height: 50,
-    toolbar: {
-      show: false,
-    },
-  },
-  plotOptions: {
-    bar: {
-      horizontal: true,
-      dataLabels: {
-        position: "top",
-      },
-    },
-  },
-  dataLabels: {
-    enabled: false,
-  },
-  series: [
-    {
-      data: [100],
-    },
-  ],
-  xaxis: {
-    categories: ["Single Bar"],
-    labels: {
-      show: false,
-    },
-    axisBorder: {
-      show: false,
-    },
-    axisTicks: {
-      show: false,
-    },
-  },
-  yaxis: {
-    show: false,
-  },
-  grid: {
-    show: false,
-  },
-  colors: ["#f23030"],
-};
-var chart1 = new ApexCharts(document.querySelector("#chartline5"), options);
-chart1.render();
+// //single line5
+// var chart = document.querySelector("#chartline5");
+// var options = {
+//   chart: {
+//     type: "bar",
+//     height: 50,
+//     toolbar: {
+//       show: false,
+//     },
+//   },
+//   plotOptions: {
+//     bar: {
+//       horizontal: true,
+//       dataLabels: {
+//         position: "top",
+//       },
+//     },
+//   },
+//   dataLabels: {
+//     enabled: false,
+//   },
+//   series: [
+//     {
+//       data: [100],
+//     },
+//   ],
+//   xaxis: {
+//     categories: ["Single Bar"],
+//     labels: {
+//       show: false,
+//     },
+//     axisBorder: {
+//       show: false,
+//     },
+//     axisTicks: {
+//       show: false,
+//     },
+//   },
+//   yaxis: {
+//     show: false,
+//   },
+//   grid: {
+//     show: false,
+//   },
+//   colors: ["#f23030"],
+// };
+// var chart1 = new ApexCharts(document.querySelector("#chartline5"), options);
+// chart1.render();
 
-//single line6
-var chart = document.querySelector("#chartline6");
-var options = {
-  chart: {
-    type: "bar",
-    height: 50,
-    toolbar: {
-      show: false,
-    },
-  },
-  plotOptions: {
-    bar: {
-      horizontal: true,
-      dataLabels: {
-        position: "top",
-      },
-    },
-  },
-  dataLabels: {
-    enabled: false,
-  },
-  series: [
-    {
-      data: [100],
-    },
-  ],
-  xaxis: {
-    categories: ["Single Bar"],
-    labels: {
-      show: false,
-    },
-    axisBorder: {
-      show: false,
-    },
-    axisTicks: {
-      show: false,
-    },
-  },
-  yaxis: {
-    show: false,
-  },
-  grid: {
-    show: false,
-  },
-  colors: ["#4ea135"],
-};
-var chart1 = new ApexCharts(document.querySelector("#chartline6"), options);
-chart1.render();
+// //single line6
+// var chart = document.querySelector("#chartline6");
+// var options = {
+//   chart: {
+//     type: "bar",
+//     height: 50,
+//     toolbar: {
+//       show: false,
+//     },
+//   },
+//   plotOptions: {
+//     bar: {
+//       horizontal: true,
+//       dataLabels: {
+//         position: "top",
+//       },
+//     },
+//   },
+//   dataLabels: {
+//     enabled: false,
+//   },
+//   series: [
+//     {
+//       data: [100],
+//     },
+//   ],
+//   xaxis: {
+//     categories: ["Single Bar"],
+//     labels: {
+//       show: false,
+//     },
+//     axisBorder: {
+//       show: false,
+//     },
+//     axisTicks: {
+//       show: false,
+//     },
+//   },
+//   yaxis: {
+//     show: false,
+//   },
+//   grid: {
+//     show: false,
+//   },
+//   colors: ["#4ea135"],
+// };
+// var chart1 = new ApexCharts(document.querySelector("#chartline6"), options);
+// chart1.render();
 
-//single line7
-var chart = document.querySelector("#chartline7");
-var options = {
-  chart: {
-    type: "bar",
-    height: 50,
-    toolbar: {
-      show: false,
-    },
-  },
-  plotOptions: {
-    bar: {
-      horizontal: true,
-      dataLabels: {
-        position: "top",
-      },
-    },
-  },
-  dataLabels: {
-    enabled: false,
-  },
-  series: [
-    {
-      data: [100],
-    },
-  ],
-  xaxis: {
-    categories: ["Single Bar"],
-    labels: {
-      show: false,
-    },
-    axisBorder: {
-      show: false,
-    },
-    axisTicks: {
-      show: false,
-    },
-  },
-  yaxis: {
-    show: false,
-  },
-  grid: {
-    show: false,
-  },
-  colors: ["#4ea135"],
-};
-var chart1 = new ApexCharts(document.querySelector("#chartline7"), options);
-chart1.render();
+// //single line7
+// var chart = document.querySelector("#chartline7");
+// var options = {
+//   chart: {
+//     type: "bar",
+//     height: 50,
+//     toolbar: {
+//       show: false,
+//     },
+//   },
+//   plotOptions: {
+//     bar: {
+//       horizontal: true,
+//       dataLabels: {
+//         position: "top",
+//       },
+//     },
+//   },
+//   dataLabels: {
+//     enabled: false,
+//   },
+//   series: [
+//     {
+//       data: [100],
+//     },
+//   ],
+//   xaxis: {
+//     categories: ["Single Bar"],
+//     labels: {
+//       show: false,
+//     },
+//     axisBorder: {
+//       show: false,
+//     },
+//     axisTicks: {
+//       show: false,
+//     },
+//   },
+//   yaxis: {
+//     show: false,
+//   },
+//   grid: {
+//     show: false,
+//   },
+//   colors: ["#4ea135"],
+// };
+// var chart1 = new ApexCharts(document.querySelector("#chartline7"), options);
+// chart1.render();
 
 //bar-chart
 var chart = document.querySelector("#chart");
@@ -504,21 +519,3 @@ var options = {
 };
 var chart = new ApexCharts(document.querySelector("#chart"), options);
 chart.render();
-
-// var chart = document.querySelector("#line-chart");
-// var options = {
-//   chart: {
-//     type: "line",
-//   },
-//   series: [
-//     {
-//       name: "sales",
-//       data: [],
-//     },
-//   ],
-//   xaxis: {
-//     categories: [],
-//   },
-// };
-// var chart = new ApexCharts(document.querySelector("#line-chart"), options);
-// chart.render();
